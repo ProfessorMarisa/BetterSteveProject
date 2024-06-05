@@ -1,0 +1,8 @@
+command /스폰:
+	trigger:
+		teleport player to spawn location
+
+command /관전:
+	permission: op
+	trigger:
+		set gamemode of player to spectator
