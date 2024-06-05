@@ -1,0 +1,13 @@
+on chat:
+	cancel event
+	broadcast "<%player%> %message%"
+	
+on load:
+	clear {prohibited::*}
+	add "me" and "msg" and "tell" and "w" to {prohibited::*}
+	add "minecraft:me" and "minecraft:msg" and "minecraft:tell" and "minecraft:w" to {prohibited::*}
+
+on command:
+	loop {prohibited::*}:
+		command is loop-value
+		cancel event
