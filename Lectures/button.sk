@@ -1,0 +1,11 @@
+on right click on stone button:
+
+	loop blocks in radius 1 of event-location:
+
+		loop-block is redstone block:
+			chance of 75%:
+				give 1 apple to player
+
+		loop-block is hay block:
+			chance of 33%:
+				give 1 bread to player
