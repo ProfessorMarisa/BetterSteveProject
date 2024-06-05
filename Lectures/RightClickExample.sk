@@ -1,0 +1,3 @@
+on right click with stick:
+	cancel event
+	push player upwards with speed 2
