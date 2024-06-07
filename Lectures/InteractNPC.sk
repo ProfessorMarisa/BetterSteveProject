@@ -1,5 +1,9 @@
-command /npc-interact-1 <player>:
-    permission: op
-    trigger:
-        set {_p} to arg-1
-        teleport {_p} to spawn location
+command /give-boat <player>:
+	permission: op
+	trigger:
+		give 1 oak boat to arg-1
+
+command /up-teleport <player>:
+	permission: op
+	trigger:
+		teleport arg-1 to location at 119, -40, 130 in world "world"
