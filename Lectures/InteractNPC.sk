@@ -1,0 +1,5 @@
+command /npc-interact-1 <player>:
+    permission: op
+    trigger:
+        set {_p} to arg-1
+        teleport {_p} to spawn location
